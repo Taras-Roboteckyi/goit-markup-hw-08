@@ -9,49 +9,17 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* .header-container {
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
- */
 
-/*-----Меню бургер для modile версії---*/
-
-.burger-btn {
-  background-color: transparent;
-  border: none;
-  padding: 0px;
-  fill: #000000;
-  line-height: 0px;
-}
-
-.mobile-menu_container {
-  position: relative;
-  padding-top: 48px;
-  padding-left: 40px;
-}
-
-.mobile-menu {
-  z-index: 100;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-
-  &_close-btn {
-    position: absolute;
-    top: 0;
-    right: 15px;
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
-.close-btn {
-  background-color: transparent;
-  border: none;
-  padding: 0px;
-  fill: #000000;
-  line-height: 0px;
-  padding-top: 10px;
+@media screen and (min-width: 1200px) {
+  .header-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }

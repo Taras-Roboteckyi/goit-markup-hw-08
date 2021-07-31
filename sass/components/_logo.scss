@@ -9,15 +9,25 @@
 
 .logo {
   @extend %logo;
-  /* margin-right: 93px; - для десктопа*/
   animation-duration: 500ms;
 }
 
 .logo__item {
   color: var(--accent-color);
 }
-/* @include font(26px, 700, 1.2) - для десктопа; */
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    @include font(26px, 700, 1.2);
+  }
+}
 /*-- Логотип сайту (Підвал) --*/
 /* .footer-logo {
   @extend %logo;
