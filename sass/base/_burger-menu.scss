@@ -1,4 +1,4 @@
-/*-----Меню бургер для modile версії---*/
+/*-----Меню бургер для mobile версії---*/
 
 .burger-btn {
   background-color: transparent;
@@ -35,6 +35,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -66,7 +67,7 @@
   }
 }
 
-/*-----Список nav-list для modile версії---*/
+/*-----Список nav-list для mobile версії---*/
 .nav-list {
   margin-bottom: 302px;
 
@@ -87,10 +88,11 @@
   }
 }
 
-.nav-list_link--current {
-  color: var(--accent-color);
-}
-/*-----Список nav-list-contacts для modile версії---*/
+/* .nav-list_link--current {
+  color: var(--accent-color); -Можливо не потрібно!
+} */
+
+/*-----Список nav-list-contacts для mobile версії---*/
 .nav-list-contacts {
   margin-bottom: 64px;
 
@@ -118,7 +120,7 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*-----Список nav-list-social для modile версії---*/
+/*-----Список nav-list-social для mobile версії---*/
 
 .nav-list-social {
   display: flex;
