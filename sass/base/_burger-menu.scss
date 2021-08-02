@@ -21,6 +21,12 @@
   padding-bottom: 48px;
 }
 
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .mobile-menu {
   z-index: 100;
   position: fixed;
@@ -44,12 +50,6 @@
     top: 0;
     right: 15px;
   }
-}
-
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
 }
 
 .close-btn {

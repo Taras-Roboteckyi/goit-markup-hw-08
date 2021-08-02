@@ -310,6 +310,12 @@ body {
   padding-bottom: 48px;
 }
 
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .mobile-menu {
   z-index: 100;
   position: fixed;
@@ -329,12 +335,6 @@ body {
   position: absolute;
   top: 0;
   right: 15px;
-}
-
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
 }
 
 .close-btn {
@@ -528,8 +528,8 @@ body {
   border: none;
   background: var(--accent-color);
   font-family: inherit;
-  font-weight: bold;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
@@ -550,8 +550,8 @@ body {
   border: none;
   background: var(--accent-color);
   font-family: inherit;
-  font-weight: bold;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
@@ -579,8 +579,8 @@ body {
   border: none;
   background: var(--accent-color);
   font-family: inherit;
-  font-weight: bold;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
@@ -1047,7 +1047,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 100%;
   padding: 40px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1077,6 +1077,57 @@ body {
   fill: var(--accent-color);
 }
 
+/*-----Модальне вікно для mobile-версії---*/
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+/*-----Модальне вікно для desktop-версії---*/
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
+/* .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  padding: 40px;
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%);
+}
+
+.modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+}
+
+.modal__icon {
+  margin: 50% auto;
+  fill: inherit;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+ */
 /*--Форма в модальному вікні--*/
 .modal-form {
   display: flex;
@@ -1085,9 +1136,9 @@ body {
 
 .modal-form__text {
   margin-bottom: 12px;
-  font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  font-weight: 700;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -1129,7 +1180,7 @@ body {
   display: block;
   top: 50%;
   left: 15px;
-  transform: translateY(-50%);
+  transform: translateY(-60%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1145,6 +1196,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 20px;
+  resize: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1161,9 +1213,11 @@ body {
 .modal-form__checbox-label {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.715;
+  flex-wrap: wrap;
+  margin-bottom: 31px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--secondary-text-color);
@@ -1174,7 +1228,7 @@ body {
   content: '';
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 8px;
   border: 1px solid var(--primary-text-color);
   border-radius: 2px;
   cursor: pointer;
@@ -1198,5 +1252,19 @@ body {
 .modal-form__label-link {
   text-decoration-line: underline;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+  .modal-form__checbox-label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.715;
+    margin-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -7,9 +7,7 @@
 
   background: var(--accent-color);
   font-family: inherit;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font(16px, 700, 1.88);
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
@@ -20,12 +18,12 @@
 /*-- Стилі для кнопки в hero-- */
 .btn {
   @include button;
-  
+
   &:hover,
   &:focus {
-  background-color: #188ce8;}
+    background-color: #188ce8;
+  }
 }
-
 
 /*-- Стилі для кнопки в підвалі-- */
 .subscription-button {
@@ -42,7 +40,6 @@
   align-self: center;
 }
 
-
 /*--Кнопка в модальному вікні--*/
 .modal-form-btn {
   @include button;
@@ -56,8 +53,9 @@
   margin-right: auto;
 
   padding: 10px 55px;
-  
+
   &:hover,
   &:focus {
-  background-color: #188ce8;}
+    background-color: #188ce8;
+  }
 }
