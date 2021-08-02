@@ -1,5 +1,7 @@
 /*--Форма в модальному вікні--*/
 
+/*-----Форма в модальному вікні для mobile-версії---*/
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -123,6 +125,8 @@
   text-decoration-line: underline;
   color: var(--accent-color);
 }
+
+/*-----Форма в модальному вікні для desktop-версії---*/
 
 @media screen and (min-width: 1200px) {
   .modal-form__text {

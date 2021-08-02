@@ -1,4 +1,5 @@
 /*--Логотип сайту(Шапка сайту)--*/
+/*-----Логотип сайту для mobile-версії---*/
 %logo {
   font-family: var(--secondary-font);
   @include font(24px, 700, 1.17);
@@ -16,12 +17,15 @@
   color: var(--accent-color);
 }
 
+/*-----Логотип сайту для tablet-версії---*/
+
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
   }
 }
 
+/*-----Логотип сайту для desktpo-версії---*/
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;

@@ -1,8 +1,10 @@
 /*-- Контакти Шапки сайту-- */
-
+/*-----Контакти Шапки сайту для mobile-версії---*/
 .contacts {
   display: none;
 }
+
+/*-----Контакти Шапки сайту для tablet-версії---*/
 
 @media screen and (min-width: 768px) {
   .contacts {
@@ -34,6 +36,8 @@
     fill: currentColor;
   }
 }
+/*-----Контакти Шапки сайту для desktop-версії---*/
+
 @media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
