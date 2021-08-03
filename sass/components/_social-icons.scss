@@ -14,10 +14,12 @@
 
 /*--Список соціальних мереж в секції"Наша команда"--*/
 
+/*-----Секція"Наша команда" для mobile-версії---*/
+
 .social-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 .social-list__items {
   @include align;
@@ -37,6 +39,12 @@
   &:focus {
     background-color: var(--accent-color);
     fill: var(--primary-white-color);
+  }
+}
+/*-----Секція"Наша команда" для desktop-версії---*/
+@media screen and (min-width: 1200px) {
+  .social-list {
+    padding-bottom: 30px;
   }
 }
 

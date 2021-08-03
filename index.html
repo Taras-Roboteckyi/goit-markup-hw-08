@@ -68,7 +68,7 @@
         </div>
 
         <!-- Контент для mobile версії (Бургер)-->
-       <div class="mobile-menu is-open" data-menu>
+       <div class="mobile-menu" data-menu>
            <div class="container mobile-menu_container">
             <button class="close-btn mobile-menu_close-btn" data-menu-close>
                 <svg class="close-btn_icon" width="40" height="40">
@@ -211,13 +211,29 @@
         </section>
 
         <!--Наша команда-->
-        <!-- <section class="team section">
+        <section class="team section">
             <div class="container">
                 <h2 class="team__title title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <img class="team__img" src="./images/team/worker1.jpg" alt="Фото дизайнера продукта" width="270"
-                            height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/deckstope/team1.webp 1x, ./images/deckstope/team1@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/deckstope/team1.jpg 1x, ./images/deckstope/team1@2x.jpg 2x">
+
+                            <source media="(min-width: 768px)" srcset="./images/tablet/team1.webp 1x, ./images/tablet/team1@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/tablet/team1.jpg 1x, ./images/tablet/team1@2x.jpg 2x">
+
+                            <source media="(min-width: 280px)" srcset="./images/mobile/team1.webp 1x, ./images/mobile/team1@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 280px)" srcset="./images/mobile/team1.jpg 1x, ./images/mobile/team1@2x.jpg 2x">
+
+                            <img class="team__img" src="#" alt="Фото дизайнера продукта">
+                        </picture>
+                        
                         <h3 class="team__heading">Игорь Демьяненко</h3>
                         <p class="team__profections" lang="en">Product Designer</p>
                         <ul class="social-list list">
@@ -257,9 +273,21 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/team/worker2.jpg" alt="Фото фронтенд разработчика"
-                            width="270" height="260">
-                        <h3 class="team__heading">Ольга Репина</h3>
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/deckstope/team2.webp 1x, ./images/deckstope/team2@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images/deckstope/team2.jpg 1x, ./images/deckstope/team2@2x.jpg 2x">
+                            
+                            <source media="(min-width: 768px)" srcset="./images/tablet/team2.webp 1x, ./images/tablet/team2@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/tablet/team2.jpg 1x, ./images/tablet/team2@2x.jpg 2x">
+                            
+                            <source media="(min-width: 280px)" srcset="./images/mobile/team2.webp 1x, ./images/mobile/team2@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 280px)" srcset="./images/mobile/team2.jpg 1x, ./images/mobile/team2@2x.jpg 2x">
+                            <img class="team__img" src="#" alt="Фото фронтенд разработчика">
+                        </picture>
+                         <h3 class="team__heading">Ольга Репина</h3>
                         <p class="team__profections" lang="en">Frontend Developer</p>
                         <ul class="social-list list">
                             <li class="social-list__items">
@@ -298,8 +326,21 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/team/worker3.jpg" alt="Фото маркетолога" width="270"
-                            height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/deckstope/team3.webp 1x, ./images/deckstope/team3@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images/deckstope/team3.jpg 1x, ./images/deckstope/team3@2x.jpg 2x">
+                            
+                            <source media="(min-width: 768px)" srcset="./images/tablet/team3.webp 1x, ./images/tablet/team3@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/tablet/team3.jpg 1x, ./images/tablet/team3@2x.jpg 2x">
+                            
+                            <source media="(min-width: 280px)" srcset="./images/mobile/team3.webp 1x, ./images/mobile/team3@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 280px)" srcset="./images/mobile/team3.jpg 1x, ./images/mobile/team3@2x.jpg 2x">
+                          <img class="team__img" src="#" alt="Фото маркетолога">
+                        </picture>
+                        
                         <h3 class="team__heading">Николай Тарасов</h3>
                         <p class="team__profections" lang="en">Marketing</p>
                         <ul class="social-list list">
@@ -339,8 +380,21 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/team/worker4.jpg" alt="Фото дизайнера" width="270"
-                            height="260">
+                        <picture>
+                        <source media="(min-width: 1200px)" srcset="./images/deckstope/team4.webp 1x, ./images/deckstope/team4@2x.webp 2x"
+                            type="image/webp">
+                        <source media="(min-width: 1200px)" srcset="./images/deckstope/team4.jpg 1x, ./images/deckstope/team4@2x.jpg 2x">
+                        
+                        <source media="(min-width: 768px)" srcset="./images/tablet/team4.webp 1x, ./images/tablet/team4@2x.webp 2x"
+                            type="image/webp">
+                        <source media="(min-width: 768px)" srcset="./images/tablet/team4.jpg 1x, ./images/tablet/team4@2x.jpg 2x">
+                        
+                        <source media="(min-width: 280px)" srcset="./images/mobile/team4.webp 1x, ./images/mobile/team4@2x.webp 2x"
+                            type="image/webp">
+                        <source media="(min-width: 280px)" srcset="./images/mobile/team4.jpg 1x, ./images/mobile/team4@2x.jpg 2x">
+                        <img class="team__img" src="#" alt="Фото дизайнера">
+                        </picture>
+                        
                         <h3 class="team__heading">Михаил Ермаков</h3>
                         <p class="team__profections" lang="en">UI Designer</p>
                         <ul class="social-list list">
@@ -381,7 +435,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- Секція"Постоянные клиенты" -->
        <!--  <section class="clients section">
