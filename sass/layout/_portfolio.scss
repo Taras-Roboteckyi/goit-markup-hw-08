@@ -5,11 +5,12 @@
 
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-.filter-list__item:not(:last-child) {
+.filter-list__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filter-list__btn {
@@ -20,9 +21,7 @@
   background: #f5f4fa;
   font-family: inherit;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
+  @include font(16px, 500, 1.63);
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -123,3 +122,12 @@
 }
 
 /*-------- Кынець сторінки сайту "Портфоліо"--------*/
+
+/* .filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+} */
+/* .filter-list__item:not(:last-child) {
+  margin-right: 8px;
+} */

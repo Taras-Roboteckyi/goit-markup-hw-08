@@ -124,6 +124,7 @@
 
 .nav-list-social {
   display: flex;
+  flex-wrap: wrap;
 
   &_item:not(:last-child) {
     margin-right: 20px;

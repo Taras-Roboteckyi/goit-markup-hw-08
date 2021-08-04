@@ -138,7 +138,7 @@ body {
 
 /*--Логотип сайту(Шапка сайту)--*/
 /*-----Логотип сайту для mobile-версії---*/
-.logo {
+.logo, .footer-logo {
   font-family: var(--secondary-font);
   font-size: 24px;
   font-weight: 700;
@@ -173,17 +173,25 @@ body {
 }
 
 /*-- Логотип сайту (Підвал) --*/
-/* .footer-logo {
-  @extend %logo;
+/*-----Логотип сайту (Підвал) для mobile-версії---*/
+.footer-logo {
   display: block;
   margin-bottom: 20px;
-
+  text-align: center;
   color: var(--primary-white-color);
+}
 
-  & .logo__item {
-    color: var(--accent-color);
+.footer-logo .logo__item {
+  color: var(--accent-color);
+}
+
+/*-----Логотип сайту (Підвал) для desktop-версії---*/
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    text-align: start;
   }
-} */
+}
+
 /*-- Навігаційні посилання(Шапка сайту) */
 /*-----Навігаційні посилання для mobile-версії---*/
 .menu {
@@ -421,6 +429,7 @@ body {
 /*-----Список nav-list-social для mobile версії---*/
 .nav-list-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-list-social_item:not(:last-child) {
@@ -573,7 +582,7 @@ body {
 
 .subscription-button {
   display: flex;
-  margin-left: 12px;
+  margin: 0 auto;
   padding: 10px 28px 10px 29px;
 }
 
@@ -913,6 +922,12 @@ body {
 }
 
 /*---Список іконок в підвалі----*/
+/*-----Список іконок в підвалі для mobile-версії---*/
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-social-list__item {
   width: 44px;
   height: 44px;
@@ -1000,60 +1015,48 @@ body {
 }
 
 /*------------Підвал------------*/
+/*-----Підвал для mobile-версії---*/
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
 
-/*---Контейнер підвалу---*/
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
 /*--- Контейнер"Присоединяйтесь" ---*/
 .footer-social-container {
-  display: block;
-  margin-left: 70px;
-}
-
-.footer-social-list {
-  display: flex;
+  margin-bottom: 60px;
 }
 
 .footer-social-container__item {
-  margin-bottom: 20px;
-  font-weight: bold;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-white-color);
+}
+
+.footer-social-container__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 /*--Контейнер"Підписка""--*/
-.subscription-container {
-  margin-left: 106px;
-}
-
 .subscription-container__item {
   margin-bottom: 20px;
-  font-weight: bold;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-white-color);
 }
 
-.subscription-form {
-  display: flex;
-}
-
 .subscription-form__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
+  margin-bottom: 20px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1070,17 +1073,71 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/*-----Підвал для tablet-версії---*/
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .footer-social-container {
+    margin-left: 165px;
+  }
+  .subscription-container {
+    margin: 0 auto;
+  }
+  .subscription-form__input {
+    width: 450px;
+  }
+}
+
+/*-----Підвал для desktop-версії---*/
+@media screen and (min-width: 1200px) {
+  /*--- Контейнер"Присоединяйтесь" ---*/
+  .footer-social-container {
+    margin-bottom: 0;
+    margin-left: 70px;
+  }
+  .footer-social-container__item {
+    text-align: start;
+  }
+  /*--Контейнер"Підписка""--*/
+  .subscription-container {
+    margin-right: 0px;
+  }
+  .subscription-container__item {
+    text-align: start;
+  }
+  .subscription-form {
+    display: flex;
+  }
+  .subscription-form__input {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
+
 /*-------- Кінець головної сторінки сайту--------*/
 /*-------- Контакти --------*/
+/*-----Контакти півалу для mobile-версії---*/
+/*---Контейнер підвалу---*/
+.footer-contacts-container {
+  margin-bottom: 60px;
+}
+
 .footer-contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer-contacts__link {
+  display: block;
   font-style: normal;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.714;
   letter-spacing: 0.03em;
+  text-align: center;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1093,18 +1150,39 @@ body {
   color: var(--primary-white-color);
 }
 
+/*-----Контакти півалу для tablet-версії---*/
+@media screen and (min-width: 768px) {
+  .footer-contacts-container {
+    margin-left: 61px;
+  }
+}
+
+/*-----Контакти півалу для desktop-версії---*/
+@media screen and (min-width: 1200px) {
+  .footer-contacts-container {
+    margin: 0;
+  }
+  .footer-contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer-contacts__link {
+    text-align: start;
+  }
+}
+
 /*-------- Початок сторінки сайту "Портфоліо"--------*/
 /*--- Унікальний контент сторінки----*/
 /*--- Секція порфоліо---*/
 /*-- Список фільтрів --*/
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-.filter-list__item:not(:last-child) {
+.filter-list__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filter-list__btn {
@@ -1114,8 +1192,8 @@ body {
   background: #f5f4fa;
   font-family: inherit;
   font-style: normal;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
@@ -1204,6 +1282,14 @@ body {
 }
 
 /*-------- Кынець сторінки сайту "Портфоліо"--------*/
+/* .filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+} */
+/* .filter-list__item:not(:last-child) {
+  margin-right: 8px;
+} */
 /*--------Фон модального вікна---------*/
 .backdrop {
   position: fixed;

@@ -49,6 +49,12 @@
 }
 
 /*---Список іконок в підвалі----*/
+/*-----Список іконок в підвалі для mobile-версії---*/
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
 
 .footer-social-list__item {
   @include align;
@@ -60,6 +66,7 @@
 
 .footer-social-list__link {
   @include icon;
+
   fill: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
 
