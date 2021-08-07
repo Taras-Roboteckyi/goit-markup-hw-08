@@ -138,12 +138,12 @@
   .cards-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    margin-left: -30px;
   }
 
   .cards-list__item {
     display: flex;
-    margin-right: 30px;
+    margin-left: 30px;
     margin-bottom: 30px;
     width: calc(100% / 2 - 30px);
   }
@@ -168,4 +168,3 @@
   }
 }
 /*-------- Кінець сторінки сайту "Портфоліо"--------*/
-

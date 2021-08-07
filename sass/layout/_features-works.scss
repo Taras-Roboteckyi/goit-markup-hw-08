@@ -36,12 +36,12 @@
   .features-works__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    margin-left: -30px;
     margin-bottom: -30px;
   }
   .features-works__items {
     width: calc(100% / 2 - 30px);
-    margin-right: 30px;
+    margin-left: 30px;
     margin-bottom: 30px;
   }
   .features-works__title {
